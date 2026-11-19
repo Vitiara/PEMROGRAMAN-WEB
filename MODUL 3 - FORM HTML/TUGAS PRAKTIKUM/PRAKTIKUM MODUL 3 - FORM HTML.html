@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Belajar Membuat Form HTML - Praktikum</title>
+  </head>
+  <body>
+    <!-- mengubah method dari get menjadi post -->
+    <form action="prosesdata.php" method="post"></form>
+    Nama: <input type="text" name="nama" value="Nama Kamu" />
+    <br />
+    Password: <input type="password" name="password" />
+    <br />
+
+    Jenis Kelamin :
+    <input type="radio" name="jenis_kelamin" value="Laki-laki" checked />
+    Laki-laki
+    <input type="radio" name="jenis_kelamin" value="Perempuan" checked />
+    Perempuan
+    <br />
+
+    Hobi:
+    <input type="checkbox" name="hobi_baca" /> Membaca Buku
+    <input type="checkbox" name="hobi_nulis" /> Menulis
+    <input type="checkbox" name="hobi_mancing" /> Memancing
+    <br />
+
+    Asal Kota:
+    <select name="asal_kota">
+      <!-- menambahkan text "Kota Jakarta" dan "Kota Semarang" sehingga dapat dibaca oleh user -->
+      <!-- menambahkan value untuk opsi Kota Bandung -->
+      <option value="Kota Jakarta">"Kota Jakarta"</option>
+      <option value="Kota Bandung">"Bandung"</option>
+      <option value="Kota Semarang">"Kota Semarang"</option>
+    </select>
+    <br />
+    Komentar Anda:
+    <textarea name="Komentar" rows="5" cols="20">
+        Silahkan katakan isi hati anda
+      </textarea
+    >
+    <br />
+    <input type="submit" value="Mulai Prosesi!" />
+  </body>
+</html>

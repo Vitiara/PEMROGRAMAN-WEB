@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Form Klinik Sehat</title>
+  </head>
+  <body>
+    <p><b>FORM KLINIK SEHAT</b></p>
+    <form action="form_klinik.html" method="get">
+      Nama: <input type="text" name="nama" placeholder="Nama Lengkap Anda" />
+      <br /><br />
+      Nomor Rekam Medis/NIK :
+      <input type="text" name="telp" placeholder="contoh: 1234-5678-9000" />
+      <br /><br />
+      Jenis Kelamin :
+      <input type="radio" name="jenis_kelamin" value="laki-laki" checked />
+      Laki-laki
+      <input type="radio" name="jenis_kelamin" value="perempuan" />
+      Perempuan
+      <br /><br />
+      Jenis Pembayaran/Penjamin :
+      <select name="Pembayaran">
+        <option value="Umum/Mandiri">Umum/Mandiri</option>
+        <option value="BPJS_Kesehatan">BPJS Kesehatan</option>
+        <option value="Asuransi_Swasta">Asuransi Swasta</option>
+      </select>
+      <br /><br />
+      Poli/Layanan yang Dituju :
+      <select name="Poli">
+        <option value="Poli_Umum">Poli Umum</option>
+        <option value="Poli_Gigi">BPJS Kesehatan</option>
+        <option value="KIA">KIA (Kesehatan Ibu & Anak)</option>
+      </select>
+      <br /><br />
+      Keluhan :
+      <input type="checkbox" name="Demam" /> Demam
+      <input type="checkbox" name="Sakit_Kepala" /> Sakit Kepala
+      <input type="checkbox" name="Gatal" /> Gatal-gatal <br /><br />
+      Detail Gejala :
+      <textarea name="Komentar" rows="5" cols="20">
+        Contoh: Demam naik turun dan nyeri tenggorokan sejak 2 hari lalu.
+      </textarea>
+      <br /><br />
+      <input type="submit" value="Submit Formulir" />
+    </form>
+  </body>
+</html>

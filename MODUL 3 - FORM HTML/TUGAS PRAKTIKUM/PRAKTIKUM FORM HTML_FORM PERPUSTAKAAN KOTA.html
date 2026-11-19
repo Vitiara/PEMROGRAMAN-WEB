@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>FORM PERPUSTAKAAN KOTA MADIUN</title>
+  </head>
+  <body>
+    <p><b>FORM PERPUSTAKAAN KOTA MADIUN</b></p>
+    <form action="form_perpus.html" method="get">
+      Nama: <input type="text" name="nama" placeholder="Nama Lengkap Anda" />
+      <br /><br />
+      Nomor Identitas (NIK/NIP/NISN/NIM) :
+      <input type="text" name="telp" placeholder="contoh: 1234-5678" />
+      <br /><br />
+      Nomor Telepon :
+      <input type="text" name="telp" placeholder="contoh: 0812-3456-7890" />
+      <br /><br />
+      Jenis Kelamin :
+      <input type="radio" name="jenis_kelamin" value="laki-laki" checked />
+      Laki-laki
+      <input type="radio" name="jenis_kelamin" value="perempuan" />
+      Perempuan
+      <br /><br />
+      Status :
+      <select name="Status">
+        <option value="Pelajar/Mahasiswa">Pelajar/Mahasiswa</option>
+        <option value="Pekerja">Pekerja</option>
+        <option value="Penggiat_Literasi">Penggiat Literasi/Komunitas</option>
+      </select>
+      <br /><br />
+      Genre Buku yang Disuka : <input type="checkbox" name="fantasi" /> Fantasi
+      <input type="checkbox" name="Non_Fiksi" /> Non Fiksi
+      <input type="checkbox" name="Sejarah" /> Sejarah <br /><br />
+      Alamat Domisili Anda :
+      <textarea name="Komentar" rows="5" cols="20">
+        Contoh: Jl. Pegangsaan Timur No. 56, Menteng, Jakarta Pusat
+      </textarea>
+      <br /><br />
+      <input type="submit" value="Submit Formulir" />
+    </form>
+  </body>
+</html>
